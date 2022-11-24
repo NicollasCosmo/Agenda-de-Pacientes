@@ -51,7 +51,7 @@ const validarDados = () => {
 }
 
 
-//NTERAÇÃO COM LAYOUT (USUÁRIO)
+//INTERAÇÃO COM LAYOUT (USUÁRIO)
 const limpaCampos = () => {
     const campos = document.querySelectorAll('.modal-field') // busca todos os campos pela classe
     campos.forEach(campos => campos.value = "") // varre todos os campos, pega cada um e retorna vazio
@@ -68,11 +68,13 @@ const saveClient = () => {
         nome: document.getElementById('nome').value,
         email: document.getElementById('email').value,
         celular: document.getElementById('celular').value,
-        cidade: document.getElementById('cidade').value
+        cidade: document.getElementById('cidade').value,
+        data: document.getElementById('data').value,
+        hora: document.getElementById('hora').value
         }
         const index = document.getElementById('nome').dataset.index
         if (index == 'new') {   //caso se trate de um novo cliente
-             createClient(client)    //cria um novo cliente (envia para o LocalStorage)
+            createClient(client)    //cria um novo cliente (envia para o LocalStorage)
             updateTable()       //atualiza a tabela 
             closeModal() // limpa os campos e fecha o moldal (janela)
         }else {     // caso se trate de salvar uma edição de cliente já existente
@@ -94,6 +96,8 @@ const createRow = (client, index) => {
         <td>${client.email}</td> 
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
+        <td>${client.data}</td>
+        <td>${client.hora}</td>
         <td>
             <button type="button" class="button green" id= "edit-${index}">Editar</button>
             <button type="button" class="button red" id= "delete-${index}">Excluir</button>
@@ -124,6 +128,8 @@ const fillFields = (client) => {
     document.getElementById('email').value = client.email
     document.getElementById('celular').value = client.celular
     document.getElementById('cidade').value = client.cidade
+    document.getElementById('data').value = client.data
+    document.getElementById('hora').value = client.hora
     document.getElementById('nome').dataset.index = client.index
 }
 

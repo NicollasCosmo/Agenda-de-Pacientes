@@ -1,5 +1,8 @@
+
+
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
+
 
 const closeModal = () => {
     limpaCampos()
@@ -52,10 +55,14 @@ const validarDados = () => {
 const limpaCampos = () => {
     const campos = document.querySelectorAll('.modal-field') // busca todos os campos pela classe
     campos.forEach(campos => campos.value = "") // varre todos os campos, pega cada um e retorna vazio
+    document.getElementById('nome').dataset.index = 'new'
 }
 
 
+//FUNÇÃO PARA SALVAR CLIENTE
 const saveClient = () => {
+    debugger
+
     if(validarDados()) {        //verifica se os campos são válidos
         const client = {        // constroi um novo cliente (criando um JSON) usando id's
         nome: document.getElementById('nome').value,
@@ -63,11 +70,21 @@ const saveClient = () => {
         celular: document.getElementById('celular').value,
         cidade: document.getElementById('cidade').value
         }
-        createClient(client)    //cria um novo cliente (envia para o LocalStorage)
-        updateTable()       //atualiza a tabela 
-        closeModal() // limpa os campos e fecha o moldal (janela)
+        const index = document.getElementById('nome').dataset.index
+        if (index == 'new') {   //caso se trate de um novo cliente
+             createClient(client)    //cria um novo cliente (envia para o LocalStorage)
+            updateTable()       //atualiza a tabela 
+            closeModal() // limpa os campos e fecha o moldal (janela)
+        }else {     // caso se trate de salvar uma edição de cliente já existente
+            updateClient(index, client) // só atualiza o cliente pelo index
+            updateTable()   //atualiza a tabela
+            closeModal()    //fecha o moldal
+        }
+       
     }  
 }
+
+
 
 // FUNÇÃO PARA CRIAR UMA NOVA LINHA VAZIA E PREENCHER COM OS TD'S
 const createRow = (client, index) => {
@@ -78,8 +95,8 @@ const createRow = (client, index) => {
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
         <td>
-            <button type="button" class="button green" id="edit-${index}">Editar</button>
-            <button type="button" class="button red" id="delete-${index}" >Excluir</button>
+            <button type="button" class="button green" id= "edit-${index}">Editar</button>
+            <button type="button" class="button red" id= "delete-${index}">Excluir</button>
         </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
@@ -101,6 +118,46 @@ const updateTable = () => {
 }
 
 
+//função que mostra o formulário preenchido quando o usuário abre o moldal
+const fillFields = (client) => {
+    document.getElementById('nome').value = client.nome
+    document.getElementById('email').value = client.email
+    document.getElementById('celular').value = client.celular
+    document.getElementById('cidade').value = client.cidade
+    document.getElementById('nome').dataset.index = client.index
+}
+
+
+
+//Lendo o cliente pelo indice para editar
+const editClient = (index) => {
+    const client = readClient()[index]
+    client.index = index //quando manda o cliente p preencher os campo, ele já tem index
+    fillFields(client) //função que mostra o formulário preenchido quando o usuário abre o moldal
+    openModal() // abre o moldal
+}
+
+
+
+const editDelete = (event) => {
+    if (event.target.type == 'button') {
+        const [action, index] = event.target.id.split('-') //transforma em um array dividindo a ação do index com '-'
+
+        if (action == 'edit') {
+            editClient(index)
+        }else {
+            const client = readClient()[index]
+            const response = confirm(`Deseja realmente excluir o cliente ${client.nome}`)
+            if (response) {
+                deleteClient(index)
+                updateTable()
+            }
+             
+        }
+    }
+}
+
+updateTable()
 
 //EVENTOS
 document.getElementById('cadastrarCliente')
@@ -111,3 +168,9 @@ document.getElementById('modalClose')
 
 document.getElementById('salvar')
 .addEventListener('click', saveClient)
+
+document.querySelector('#tableClient>tbody')
+.addEventListener('click', editDelete)
+
+document.getElementById('cancelar')
+.addEventListener('click', closeModal)

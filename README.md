@@ -27,3 +27,24 @@
 
 
 &#xa0;
+
+## :white_check_mark: Funcionalidades
+As principais funcionalidades do projeto são:
+
+✔️ Exibir uma lista de pessoas cadastradas;
+
+✔️ Permitir o usuário adicionar uma ou mais pessoas à lista;
+
+✔️ Permitir o usuário editar os dados de alguma pessoa da lista;
+
+✔️ Permitir o usuário remover alguma pessoa da lista;
+
+✔️ Validar se os dados da pessoa (nome, email e data de nascimento) são válidos;
+
+✔️ Validar se o email ainda não está cadastrado ao adicionar ou editar alguma pessoa da lista;
+
+✔️ Exibir uma mensagem de erro caso algum dado seja inválido;
+
+✔️ Armazenar todos os dados no localStorage do navegador.
+
+&#xa0;

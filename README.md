@@ -31,19 +31,15 @@
 ## :white_check_mark: Funcionalidades
 As principais funcionalidades do projeto são:
 
-✔️ Exibir uma lista de pessoas cadastradas;
+✔️ Exibir uma lista de pacientes agendados;
 
-✔️ Permitir o usuário adicionar uma ou mais pessoas à lista;
+✔️ Permitir ao usuário adicionar um ou mais pacientes à lista de agendamento;
 
-✔️ Permitir o usuário editar os dados de alguma pessoa da lista;
+✔️ Permitir ao usuário editar os dados do paciente agendado;
 
-✔️ Permitir o usuário remover alguma pessoa da lista;
+✔️ Permitir o usuário remover algum paciente da lista de agendamento;
 
-✔️ Validar se os dados da pessoa (nome, email e data de nascimento) são válidos;
-
-✔️ Validar se o email ainda não está cadastrado ao adicionar ou editar alguma pessoa da lista;
-
-✔️ Exibir uma mensagem de erro caso algum dado seja inválido;
+✔️ Validar se os dados da paciente foram preenchidos corretamente;
 
 ✔️ Armazenar todos os dados no localStorage do navegador.
 

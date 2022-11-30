@@ -44,3 +44,12 @@ As principais funcionalidades do projeto são:
 ✔️ Armazenar todos os dados no localStorage do navegador.
 
 &#xa0;
+
+## :computer: Tecnologias
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+
+* [JavaScript](https://www.javascript.com/)
+
+

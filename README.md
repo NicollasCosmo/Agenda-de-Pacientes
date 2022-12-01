@@ -95,6 +95,21 @@ As principais funcionalidades do projeto são:
 ## :scroll: Pré requisitos
 Para utilizar o sistema, basta um navegador de sua preferência e conexão com internet.
 
+&#xa0;
 
+## :link: Links
+* Repositório: https://github.com/CaioAugustoHD/Lista-pessoas-cadastradas
+* Deploy: https://pessoas-cadastradas.netlify.app/
 
+&#xa0;
 
+## :sparkles: Autor
+<h4>Desenvolvido por Nicollas Cosmo</h4>
+
+<a href="https://github.com/NicollasCosmo">
+<img src="https://github.com/NicollasCosmo.png" width="150px" alt="Imagem do autor">
+</a>
+
+&#xa0;
+
+[![Linkedin Badge](https://img.shields.io/badge/-Caio%20Augusto%20Pereira-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicollascosmo/)](https://www.linkedin.com/in/nicollascosmo/)<br>

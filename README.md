@@ -111,4 +111,5 @@ Para utilizar o sistema, basta um navegador de sua preferência e conexão com i
 </a>
 
 &#xa0;
+
 [![Linkedin Badge](https://img.shields.io/badge/-Nicollas%20Cosmo%20-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicollascosmo/)](https://www.linkedin.com/in/nicollascosmo/)<br>

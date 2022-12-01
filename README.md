@@ -79,4 +79,23 @@ As principais funcionalidades do projeto são:
 </div>
 
 
+&#xa0;
+
+
+## :orange_book: Como usar
+<p>Acesse a aplicação pelo link. A lista não aparecerá caso não tenha nenhuma pessoa cadastrada.</p>
+<p>Para adicionar um novo paciente, clique no botão "Adicionar", preencha todos os dados corretamente e confirme sua ação no botão "Salvar". Caso os dados preenchidos forem válidos, ela já será exibida na lista.</p>
+<p>Para alterar ou atualizar alguma infomação do paciente, basta clicar no botão "editar" na linha correspondente, fazer as alterações e salvar.</p>
+<p>Para remover um paciente, clique no botão "excluir" e confirme sua ação ao aparecer a mensagem de alerta.</p>
+<p>Todos os dados são salvos no localStorage do seu navegador. Caso o site seja fechado, os registros não se perderão.</p>
+
+**<p>⚠️ Caso você limpe os dados de navegação, os dados do localStorage do seu navegador serão perdidos.</p>**
+
+&#xa0;
+
+## :scroll: Pré requisitos
+Para utilizar o sistema, basta um navegador de sua preferência e conexão com internet.
+
+
+
 

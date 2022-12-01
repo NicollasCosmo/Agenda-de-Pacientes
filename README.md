@@ -54,7 +54,7 @@ As principais funcionalidades do projeto são:
 ## :camera: Imagens
 **<p align="center">Exemplo de funcionamento:</p>**
 <div align="center">
-  <img src="img/exemplo.gif" alt="exemplo da aplicação em execução">
+  <img src="img/video_agenda_pacientes.gif" alt="exemplo da aplicação em execução">
 </div>
 
 **<p align="center">Lista de pessoas em desktop:</p>**

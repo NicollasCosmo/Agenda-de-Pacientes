@@ -59,7 +59,7 @@ const limpaCampos = () => {
 }
 
 
-//FUNÇÃO PARA SALVAR CLIENTE
+//FUNÇÃO PARA SALVAR PACIENTE
 const saveClient = () => {
     debugger
 
@@ -135,7 +135,7 @@ const fillFields = (client) => {
 
 
 
-//Lendo o cliente pelo indice para editar
+//Lendo o paciente pelo indice para editar
 const editClient = (index) => {
     const client = readClient()[index]
     client.index = index //quando manda o cliente p preencher os campo, ele já tem index

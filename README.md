@@ -57,22 +57,22 @@ As principais funcionalidades do projeto são:
   <img src="img/video_agenda_pacientes.gif" alt="exemplo da aplicação em execução">
 </div>
 
-**<p align="center">Lista de pessoas em desktop:</p>**
+**<p align="center">Lista de pacientes em desktop:</p>**
 <div align="center">
   <img src="img/lista_agendados.png" alt="Lista em desktop">
 </div>
 
-**<p align="center">Adicionar pessoa à lista:</p>**
+**<p align="center">Cadastrar Paciente:</p>**
 <div align="center">
   <img src="img/adcionar_a_lista.png" alt="Adicionando pessoa">
 </div>
 
-**<p align="center">Lista de pessoas em mobile:</p>**
+**<p align="center">Lista de pacientes em mobile:</p>**
 <div align="center">
   <img src="img/tela_responsiva.png" alt="Lista em mobile">
 </div>
 
-**<p align="center">Editar dados de uma pessoa:</p>**
+**<p align="center">Editar dados do paciente:</p>**
 <div align="center">
   <img src="img/tela_edicao_responsiva.png" alt="Editando dados de uma pessoa">
 </div>

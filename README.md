@@ -60,7 +60,7 @@ As principais funcionalidades do projeto são:
 
 **<p align="center">Lista de pessoas em desktop:</p>**
 <div align="center">
-  <img src="img/teladesktop.png" alt="Lista em desktop">
+  <img src="img/lista_agendados.png" alt="Lista em desktop">
 </div>
 
 **<p align="center">Adicionar pessoa à lista:</p>**
@@ -70,12 +70,12 @@ As principais funcionalidades do projeto são:
 
 **<p align="center">Lista de pessoas em mobile:</p>**
 <div align="center">
-  <img src="img/telamobile.png" alt="Lista em mobile">
+  <img src="img/tela_responsiva.png" alt="Lista em mobile">
 </div>
 
 **<p align="center">Editar dados de uma pessoa:</p>**
 <div align="center">
-  <img src="img/modalmobile.png" alt="Editando dados de uma pessoa">
+  <img src="img/tela_edicao_responsiva.png" alt="Editando dados de uma pessoa">
 </div>
 
 
